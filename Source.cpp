@@ -31,7 +31,7 @@ int main() {
 }
 
 
-////////////////////////////////////////////////////////////////////
+///////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 //Co002 - Write an isPositive function that returns true when the double parameter passed to it is indeed positive
@@ -51,3 +51,37 @@ int main() {
 	system("pause");
 	return 0;
 }
+
+
+///////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+//Co003 - function returns true when the magnitude of 'a' is equal to the magnitude of 'b' (absolute value)
+bool isEqual(int a, int b)
+{
+	if (a < 0)
+		a = 0 - a;
+	if (b < 0)
+		b = 0 - b;
+
+	return a == b;
+}
+
+int main() {
+
+	int a, b;
+
+	cout << "Enter First number" << endl;
+	cin >> a;
+	cout << "Enter Second number" << endl;
+	cin >> b;
+	
+	cout << a << " and " << b << boolalpha << " is equal ? \nAnswer : " << isEqual(a,b) << endl;
+	system("pause");
+	return 0;
+}
+
+
+///////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
